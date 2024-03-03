@@ -1,5 +1,6 @@
 package com.jobsityapp
 
+import android.os.Bundle;
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint.fabricEnabled
@@ -12,6 +13,15 @@ class MainActivity : ReactActivity() {
    * rendering of the component.
    */
   override fun getMainComponentName(): String = "jobsityApp"
+
+  /**
+   * We override the [onCreate] method to pass a null [savedInstanceState] to the super method.
+   * This is because we are using [react-native-navigation] and we don't want to restore the state
+   * of the activity. React native Screens configure the activity on their own.
+   */
+  override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(null)
+  }
 
   /**
    * Returns the instance of the [ReactActivityDelegate]. We use [DefaultReactActivityDelegate]
