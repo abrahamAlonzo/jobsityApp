@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
     flexDirection: 'column',
   },
   inputContainer: {
-    height: 43,
+    height: 60,
     borderRadius: 8,
     borderWidth: 1,
     paddingVertical: 20,

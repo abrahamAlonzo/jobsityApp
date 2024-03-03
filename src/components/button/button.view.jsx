@@ -42,7 +42,9 @@ const Button = ({
         styleButton(pressed),
       ]}
       onPress={onPress ? onPress : () => {}}>
-      <Text style={[textStyle, styleDisableTextButton()]}>{text}</Text>
+      <Text style={[preset.textColor, textStyle, styleDisableTextButton()]}>
+        {text}
+      </Text>
     </Pressable>
   );
 };
