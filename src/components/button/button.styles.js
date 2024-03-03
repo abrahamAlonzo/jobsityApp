@@ -1,17 +1,3 @@
-/**
- * The variations of offsets.
- */
-// export type KeyboardOffsets = keyof typeof offsets
-
-// interface PresetProps {
-//   default: {
-//     outer: ViewStyle,
-//     inner: TextStyle,
-//   }
-// }
-/**
- * All the variations of screens.
- */
 export const presets = (color, disabled) => {
   return {
     button: {

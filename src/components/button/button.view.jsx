@@ -1,4 +1,3 @@
-// React
 import React, {useCallback} from 'react';
 import {Text, Pressable} from 'react-native';
 

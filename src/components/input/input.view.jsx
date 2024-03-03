@@ -1,7 +1,7 @@
+import React from 'react';
 import {View, TextInput, Text} from 'react-native';
 import {styles} from './input.style';
 import {COLORS} from '../../utils';
-import {useEffect} from 'react';
 
 const Input = ({
   title = '',
