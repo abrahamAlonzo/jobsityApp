@@ -2,7 +2,6 @@ import React, {useCallback} from 'react';
 import {Text, Pressable} from 'react-native';
 
 import {presets} from './button.styles';
-import {pixelToRem} from '../../utils';
 
 const Button = ({
   text,
@@ -38,7 +37,7 @@ const Button = ({
       accessible={true}
       style={({pressed}) => [
         preset.button,
-        {height: pixelToRem(50)},
+        {height: 50},
         style,
         styleButton(pressed),
       ]}

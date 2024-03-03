@@ -1,9 +1,10 @@
+import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {HomeScreen, MovieDetailScreen} from '../screens';
 import {NON_AUTH_ROUTES} from './constants';
-import {createStackNavigator} from '@react-navigation/stack';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-const Stack = createStackNavigator();
+const Stack = createNativeStackNavigator();
 
 function HomeStack() {
   return (
@@ -17,7 +18,7 @@ function HomeStack() {
       />
       <Stack.Screen
         name={NON_AUTH_ROUTES.MOVIE_DESCRIPTION}
-        component={MovieDetailScreen}
+        component={HomeScreen}
       />
     </Stack.Navigator>
   );

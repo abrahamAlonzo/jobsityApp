@@ -5,5 +5,3 @@ export const COLORS = {
   primaryGray: '#666666',
   primaryBlack: '#000000',
 };
-
-export const pixelToRem = value => [(value / 16).toFixed(2), 'rem'].join('');
